@@ -1,0 +1,111 @@
+
+#navBar{
+  background-color:#eeeeee;
+  margin:0.1rem
+}
+.navItem{
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  text-align:center;
+  color:#000;
+  height: 0.3rem!important;
+  line-height:0.3rem;
+}
+.tab-wrp{
+  overflow-y: hidden;
+  overflow-x: scroll;
+  white-space: nowrap;
+  font-size: 0;
+}
+.tab-wrp::-webkit-scrollbar{
+  display: none;
+}
+.navItem{
+  width: 22%!important;
+  display: inline-block;
+}
+/*.navItem:nth-child(1){
+  width:18% !important
+}
+.navItem:nth-child(2){
+  width:18% !important
+}
+.navItem:nth-child(3){
+  width:22% !important
+}
+.navItem:nth-child(4){
+  width:19% !important
+}
+.navItem:nth-child(5){
+  width:23% !important
+}
+.navItem .swiper-slide{
+  padding:0.1rem
+}*/
+@media only screen and (min-width: 1199px){
+  .navItem span{
+    display:inline-block;
+    font-size:0.12rem;
+    width:100%;
+    /*color: #eeeeee !important;*/
+    background: #B1987F !important;;
+
+  }
+}
+@media only screen and (max-width: 1199px){
+  .navItem span{
+    display:inline-block;
+    font-size:0.12rem;
+    width:100%;
+    /*color: #eeeeee !important;*/
+    background: #B1987F !important;;
+
+  }
+}
+
+.navItem span:hover{
+  cursor:pointer;
+  color: #000;
+  background:#d8cbbe !important;
+  width: 100%;
+}
+.slide-nav-active {
+  color: #000 !important;
+  background: #d8cbbe !important;
+}
+#promosContent{height:100%;margin-top:0.2rem;overflow-x:hidden;overflow-y:auto
+}
+#promosContent .reg58{width:95%;margin:auto;padding-top:0
+}
+#promosContent .reg58 ul{width:80%;margin:auto
+}
+#promosContent .reg58 ul li{padding-top:0.2rem;font-size:0.12rem
+}
+#promosContent .reg58 ul li .button{width:calc(100% - 0.24rem);font-size:0.13rem;color:#000;cursor:pointer
+}
+#promosContent .reg58 ul li .button:hover{-webkit-transform:scale(1.02);-ms-transform:scale(1.02);transform:scale(1.02)
+}
+.promosContent::-webkit-scrollbar{display:none
+}
+.promosContent{overflow-x:hidden;overflow-y:auto;width:100% !important
+}
+.goIndex{padding:0.3rem
+}
+.goIndex span{
+  display:inline-block;
+  padding:0.05rem 0.15rem;
+  background:#b29881;
+  border-radius:0.05rem;
+  font-size:0.13rem;
+  cursor: pointer;
+}
+.goIndex span:hover{background:#c5b2a1
+}
+@media only screen and (min-width: 1199px){
+  #promosContent{
+    margin:auto
+  }
+  #promosContent .reg58 ul{
+    width:60% !important
+  }
+}

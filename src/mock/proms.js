@@ -1,0 +1,300 @@
+export default {
+  getPromsData: () => ({
+    tabs: ['首充红包', 'VIP升级红包', 'VIP月红包', '彩票专享红包'],
+    tables: [
+      {html: '<table>\n' +
+        '                  <thead>\n' +
+        '                  <tr>\n' +
+        '                    <th>首存</th>\n' +
+        '                    <th>一倍水彩金</th>\n' +
+        '                    <th>官网优惠彩金</th>\n' +
+        '                    <th>官网礼品</th>\n' +
+        '                    <th>总价值</th></tr>\n' +
+        '                  </thead>\n' +
+        '                  <tbody>\n' +
+        '                  <tr>\n' +
+        '                    <td>500</td>\n' +
+        '                    <td>58</td>\n' +
+        '                    <td>250</td>\n' +
+        '                    <td>--</td>\n' +
+        '                    <td>超过300</td></tr>\n' +
+        '                  <tr>\n' +
+        '                    <td>1000</td>\n' +
+        '                    <td>88</td>\n' +
+        '                    <td>500</td>\n' +
+        '                    <td>zippo打火机</td>\n' +
+        '                    <td>超过988</td></tr>\n' +
+        '                  <tr>\n' +
+        '                    <td>3000</td>\n' +
+        '                    <td>188</td>\n' +
+        '                    <td>588</td>\n' +
+        '                    <td>zippo打火机</td>\n' +
+        '                    <td>超过1688</td></tr>\n' +
+        '                  <tr>\n' +
+        '                    <td>5000</td>\n' +
+        '                    <td>288</td>\n' +
+        '                    <td>588</td>\n' +
+        '                    <td>飞利浦电动牙刷</td>\n' +
+        '                    <td>超过1788</td></tr>\n' +
+        '                  <tr>\n' +
+        '                    <td>10000</td>\n' +
+        '                    <td>388</td>\n' +
+        '                    <td>588</td>\n' +
+        '                    <td>飞利浦电动牙刷</td>\n' +
+        '                    <td>超过2388</td></tr>\n' +
+        '                  <tr>\n' +
+        '                    <td>20000</td>\n' +
+        '                    <td>688</td>\n' +
+        '                    <td>588</td>\n' +
+        '                    <td>DW手表</td>\n' +
+        '                    <td>超过2688</td></tr>\n' +
+        '                  <tr>\n' +
+        '                    <td>30000</td>\n' +
+        '                    <td>788</td>\n' +
+        '                    <td>588</td>\n' +
+        '                    <td>DW手表</td>\n' +
+        '                    <td>超过2788</td></tr>\n' +
+        '                  <tr>\n' +
+        '                    <td>50000</td>\n' +
+        '                    <td>888</td>\n' +
+        '                    <td>588</td>\n' +
+        '                    <td>Apple Watch 5</td>\n' +
+        '                    <td>超过4888</td></tr>\n' +
+        '                  <tr>\n' +
+        '                    <td>100000</td>\n' +
+        '                    <td>1388</td>\n' +
+        '                    <td>588</td>\n' +
+        '                    <td>新版Ipad air 256G</td>\n' +
+        '                    <td>超过7888</td></tr>\n' +
+        '                  <tr>\n' +
+        '                    <td>200000</td>\n' +
+        '                    <td>2388</td>\n' +
+        '                    <td>588</td>\n' +
+        '                    <td>Iphone11 Pro 256G</td>\n' +
+        '                    <td>超过18888</td></tr>\n' +
+        '                  </tbody>\n' +
+        '                  <tfoot>\n' +
+        '                  <tr>\n' +
+        '                    <th colspan="5" class="tableFooter">\n' +
+        '                      <p>活动规则：</p>\n' +
+        '                      <p>1、会员可自由选择是否参加官网活动</p>\n' +
+        '                      <p>2、参加官网活动需完成对应的流水要求</p>\n' +
+        '                      <p>3、活动时间：2020年3月15日0时起至5月1日0:00结束</p>\n' +
+        '                    </th>\n' +
+        '                  </tr>\n' +
+        '                  </tfoot>\n' +
+        '                </table>'},
+      {html:'<table>\n' +
+        '                  <thead>\n' +
+        '                  <tr>\n' +
+        '                    <th>vip等级</th>\n' +
+        '                    <th>客服红包</th>\n' +
+        '                    <th>官方红包</th>\n' +
+        '                    <th>所需流水</th>\n' +
+        '                    <th>合计赠送</th></tr>\n' +
+        '                  </thead>\n' +
+        '                  <tbody>\n' +
+        '                  <tr>\n' +
+        '                    <td>vip2</td>\n' +
+        '                    <td>100</td>\n' +
+        '                    <td>18</td>\n' +
+        '                    <td>1倍</td>\n' +
+        '                    <td>118</td></tr>\n' +
+        '                  <tr>\n' +
+        '                    <td>vip3</td>\n' +
+        '                    <td>300</td>\n' +
+        '                    <td>38</td>\n' +
+        '                    <td>1倍</td>\n' +
+        '                    <td>338</td></tr>\n' +
+        '                  <tr>\n' +
+        '                    <td>vip4</td>\n' +
+        '                    <td>400</td>\n' +
+        '                    <td>88</td>\n' +
+        '                    <td>1倍</td>\n' +
+        '                    <td>488</td></tr>\n' +
+        '                  <tr>\n' +
+        '                    <td>vip5</td>\n' +
+        '                    <td>500</td>\n' +
+        '                    <td>388</td>\n' +
+        '                    <td>1倍</td>\n' +
+        '                    <td>888</td></tr>\n' +
+        '                  <tr>\n' +
+        '                    <td>vip6</td>\n' +
+        '                    <td>600</td>\n' +
+        '                    <td>688</td>\n' +
+        '                    <td>1倍</td>\n' +
+        '                    <td>1288</td></tr>\n' +
+        '                  <tr>\n' +
+        '                    <td>vip7</td>\n' +
+        '                    <td>800</td>\n' +
+        '                    <td>1088</td>\n' +
+        '                    <td>1倍</td>\n' +
+        '                    <td>1888</td></tr>\n' +
+        '                  <tr>\n' +
+        '                    <td>vip8</td>\n' +
+        '                    <td>1800</td>\n' +
+        '                    <td>3888</td>\n' +
+        '                    <td>1倍</td>\n' +
+        '                    <td>5688</td></tr>\n' +
+        '                  <tr>\n' +
+        '                    <td>vip9</td>\n' +
+        '                    <td>2000</td>\n' +
+        '                    <td>5888</td>\n' +
+        '                    <td>1倍</td>\n' +
+        '                    <td>7888</td></tr>\n' +
+        '                  <tr>\n' +
+        '                    <td>vip10</td>\n' +
+        '                    <td>10000</td>\n' +
+        '                    <td>18888</td>\n' +
+        '                    <td>1倍</td>\n' +
+        '                    <td>28888</td></tr>\n' +
+        '                  </tbody>\n' +
+        '                  <tfoot>\n' +
+        '                  <tr>\n' +
+        '                    <th colspan="5" class="tableFooter">\n' +
+        '                      <a href="https://matter.divda.com/talk/chatClient/chatbox.jsp?companyID=631067070&amp;configID=184&amp;jid=2851064440&amp;s=1" target="_blank">联系在线客服领取</a></th>\n' +
+        '                  </tr>\n' +
+        '                  </tfoot>\n' +
+        '                </table>'},
+      {html: '<table>\n' +
+        '                  <thead>\n' +
+        '                  <tr>\n' +
+        '                    <th>vip等级</th>\n' +
+        '                    <th>客服红包</th>\n' +
+        '                    <th>所需流水</th>\n' +
+        '                    <th>合计赠送</th></tr>\n' +
+        '                  </thead>\n' +
+        '                  <tbody>\n' +
+        '                  <tr>\n' +
+        '                    <td>vip2</td>\n' +
+        '                    <td>100</td>\n' +
+        '                    <td>1倍</td>\n' +
+        '                    <td>100</td></tr>\n' +
+        '                  <tr>\n' +
+        '                    <td>vip3</td>\n' +
+        '                    <td>300</td>\n' +
+        '                    <td>1倍</td>\n' +
+        '                    <td>300</td></tr>\n' +
+        '                  <tr>\n' +
+        '                    <td>vip4</td>\n' +
+        '                    <td>400</td>\n' +
+        '                    <td>1倍</td>\n' +
+        '                    <td>400</td></tr>\n' +
+        '                  <tr>\n' +
+        '                    <td>vip5</td>\n' +
+        '                    <td>500</td>\n' +
+        '                    <td>1倍</td>\n' +
+        '                    <td>500</td></tr>\n' +
+        '                  <tr>\n' +
+        '                    <td>vip6</td>\n' +
+        '                    <td>600</td>\n' +
+        '                    <td>1倍</td>\n' +
+        '                    <td>600</td></tr>\n' +
+        '                  <tr>\n' +
+        '                    <td>vip7</td>\n' +
+        '                    <td>800</td>\n' +
+        '                    <td>1倍</td>\n' +
+        '                    <td>800</td></tr>\n' +
+        '                  <tr>\n' +
+        '                    <td>vip8</td>\n' +
+        '                    <td>1800</td>\n' +
+        '                    <td>1倍</td>\n' +
+        '                    <td>1800</td></tr>\n' +
+        '                  <tr>\n' +
+        '                    <td>vip9</td>\n' +
+        '                    <td>2000</td>\n' +
+        '                    <td>1倍</td>\n' +
+        '                    <td>2000</td></tr>\n' +
+        '                  <tr>\n' +
+        '                    <td>vip10</td>\n' +
+        '                    <td>10000</td>\n' +
+        '                    <td>1倍</td>\n' +
+        '                    <td>10000</td></tr>\n' +
+        '                  </tbody>\n' +
+        '                  <tfoot>\n' +
+        '                  <tr>\n' +
+        '                    <th colspan="5" class="tableFooter">\n' +
+        '                      <a href="https://matter.divda.com/talk/chatClient/chatbox.jsp?companyID=631067070&amp;configID=184&amp;jid=2851064440&amp;s=1" target="_blank">联系在线客服领取</a></th>\n' +
+        '                  </tr>\n' +
+        '                  </tfoot>\n' +
+        '                </table>'},
+      {html: '<table>\n' +
+'                <thead>\n' +
+'                <tr>\n' +
+'                  <th colspan="2">彩票每日打码量</th>\n' +
+'                  <th>赠送金额</th></tr>\n' +
+'                </thead>\n' +
+'                <tbody>\n' +
+'                <tr>\n' +
+'                  <td>≥&nbsp;3000</td>\n' +
+'                  <td>≤&nbsp;4999</td>\n' +
+'                  <td>8</td></tr>\n' +
+'                <tr>\n' +
+'                  <td>≥&nbsp;5000</td>\n' +
+'                  <td>≤&nbsp;9999</td>\n' +
+'                  <td>18</td></tr>\n' +
+'                <tr>\n' +
+'                  <td>≥&nbsp;10000</td>\n' +
+'                  <td>≤&nbsp;29999</td>\n' +
+'                  <td>38</td></tr>\n' +
+'                <tr>\n' +
+'                  <td>≥&nbsp;30000</td>\n' +
+'                  <td>≤&nbsp;49999</td>\n' +
+'                  <td>68</td></tr>\n' +
+'                <tr>\n' +
+'                  <td>≥&nbsp;50000</td>\n' +
+'                  <td>≤&nbsp;99999</td>\n' +
+'                  <td>118</td></tr>\n' +
+'                <tr>\n' +
+'                  <td>≥&nbsp;100000</td>\n' +
+'                  <td>≤&nbsp;199999</td>\n' +
+'                  <td>238</td></tr>\n' +
+'                <tr>\n' +
+'                  <td>≥&nbsp;200000</td>\n' +
+'                  <td>≤&nbsp;399999</td>\n' +
+'                  <td>518</td></tr>\n' +
+'                <tr>\n' +
+'                  <td>≥&nbsp;400000</td>\n' +
+'                  <td>≤&nbsp;599999</td>\n' +
+'                  <td>888</td></tr>\n' +
+'                <tr>\n' +
+'                  <td>≥&nbsp;600000</td>\n' +
+'                  <td>≤&nbsp;999999</td>\n' +
+'                  <td>1188</td></tr>\n' +
+'                <tr>\n' +
+'                  <td>≥&nbsp;1000000</td>\n' +
+'                  <td>≤&nbsp;1999999</td>\n' +
+'                  <td>1888</td></tr>\n' +
+'                <tr>\n' +
+'                  <td>≥&nbsp;2000000</td>\n' +
+'                  <td>≤&nbsp;3999999</td>\n' +
+'                  <td>2888</td></tr>\n' +
+'                <tr>\n' +
+'                  <td>≥&nbsp;4000000</td>\n' +
+'                  <td>≤&nbsp;5999999</td>\n' +
+'                  <td>5888</td></tr>\n' +
+'                <tr>\n' +
+'                  <td>≥&nbsp;6000000</td>\n' +
+'                  <td>≤&nbsp;7999999</td>\n' +
+'                  <td>8888</td></tr>\n' +
+'                <tr>\n' +
+'                  <td>≥&nbsp;8000000</td>\n' +
+'                  <td>≤&nbsp;9999999</td>\n' +
+'                  <td>12888</td></tr>\n' +
+'                <tr>\n' +
+'                  <td colspan="2">10000000+</td>\n' +
+'                  <td>16888</td></tr>\n' +
+'                </tbody>\n' +
+'                <tfoot>\n' +
+'                <tr>\n' +
+'                  <th colspan="5" class="tableFooter">\n' +
+'                    <p>领取方式：</p>\n' +
+'                    <p>1、会员可自由选择是否参加官网活动</p>\n' +
+'                    <p>2、每天中午12点开始，会员联系推广申请，下午2点开始派发</p>\n' +
+'                  </th>\n' +
+'                </tr>\n' +
+'                </tfoot>\n' +
+'              </table>'}
+    ]
+  })
+}

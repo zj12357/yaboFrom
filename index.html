@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>yabo</title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1024308_0nghhlpqojuc.css">
+    <script src="//at.alicdn.com/t/font_1024308_0nghhlpqojuc.js"></script>
+    <style type="text/css">
+      .icon {
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <script>
+    //根据屏幕宽比例来设定html根元素的fontsize，比如ipone6s是100px，iphone6 plus 是110px，ipad是204px
+    new function() {
+      var _self = this;
+      _self.width = 375; //设置默认最大宽度 iphone6
+      _self.fontSize = 100; //默认字体大小
+      _self.widthProportion = function() {
+        var p = (document.body && document.body.clientWidth || document.getElementsByTagName("html")[0].offsetWidth) / _self.width;
+        if(p<0.5){
+          p=0.5
+        }else if(p>2.04){//2.04是ipad的宽高比例
+          p=2
+        }
+        console.log(window.innerWidth)
+        let inWidth = window.innerWidth;
+        if(window.innerWidth>window.innerHeight){
+          if(inWidth>1024 && inWidth<1400){
+            p=1.53
+          }else if(inWidth>1400 && inWidth<1620){
+            p=1.8
+          }else if(inWidth>1620 && inWidth<1950){
+            p=1.9
+          }
+        }
+        return p;
+      };
+      _self.changePage = function() {
+        document.getElementsByTagName("html")[0].setAttribute("style", "font-size:" + _self.widthProportion() * _self.fontSize + "px !important");
+      }
+      _self.env = function() {
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+
+          //document.getElementById("app").setAttribute("class",'m_app')
+
+        } else {
+          //document.getElementById("app").setAttribute("class",'pc_app')
+        }
+      }
+      _self.changePage();
+      window.addEventListener("resize", function() {
+        _self.changePage();
+      }, false);
+
+      //_self.env();
+    };
+  </script>
+  <script src="https://wsadmin.baiyf.com/index/index/chatBoxJs/u/5c6cbcb7d55ca"></script>
+
+  <script>whisperChat.init();</script>
+  <script>
+    var _hmt = _hmt || [];
+    (function () {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?ccc897011052f065164814b738a9b922";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  <body>
+    <div id="app" class="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <style>
+
+  </style>
+</html>
