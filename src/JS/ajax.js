@@ -1,9 +1,7 @@
 import axios from 'axios'
-import vm from '../main'
-// import Vue from 'vue'
 
 let http = axios.create({
-  baseURL: 'http://api.page.activity.yaboabc.com'
+  // baseURL: 'http://api.page.activity.yaboabc.com'
 })
 // 请求拦截器
 http.interceptors.request.use(

@@ -123,7 +123,7 @@
 <script>
 import '../assets/css/index.css'
 import { Swiper } from 'vux'
-import {getIndexData} from '../model/index.js'
+import {getIndexData,getAgentExtendLink} from '../model/index.js'
 
 export default {
   components: { Swiper },
@@ -146,6 +146,7 @@ export default {
   created () {
     this.init()
     this.host = window.location.host
+    this.getLink()
   },
   methods: {
     init () {
@@ -153,15 +154,15 @@ export default {
         for (var i = 0; i < res.data.data.List.length; i++) {
           this.loading = false
           switch (res.data.data.List[i].downkey) {
-            case 'Sports':
-              this.sportBtn.url = res.data.data.List[i].downurl
-              break
-            case 'TotalSite':
-              this.allBtn.url = res.data.data.List[i].downurl
-              break
-            case 'ToMobile':
-              this.btn1.url = res.data.data.List[i].downurl
-              break
+            // case 'Sports':
+            //   this.sportBtn.url = res.data.data.List[i].downurl
+            //   break
+            // case 'TotalSite':
+            //   this.allBtn.url = res.data.data.List[i].downurl
+            //   break
+            // case 'ToMobile':
+            //   this.btn1.url = res.data.data.List[i].downurl
+            //   break
             case 'ToComputer':
               this.pcBtn.url = res.data.data.List[i].downurl
               break
@@ -171,9 +172,9 @@ export default {
             case 'ToPoker':
               this.pokerBtn.url = res.data.data.List[i].downurl
               break
-            case 'goChatbot':
-              this.kefu.url = res.data.data.List[i].downurl
-              break
+            // case 'goChatbot':
+            //   this.kefu.url = res.data.data.List[i].downurl
+            //   break
             default:
           }
         }
@@ -186,6 +187,31 @@ export default {
           this.btn3.url = '/proms'
         }
         this.loaded = true
+      })
+    },
+    getLink(){
+      getAgentExtendLink({name:''}).then(res=>{
+        let {data:{resultData}} =res
+        if(resultData && resultData.list.length >0 ){
+          this.loaded = true
+          for (let i = 0; i < resultData.list.length; i++) {
+            switch (resultData.list[i].linkType) {
+              case 'app':
+                this.sportBtn.url = resultData.list[i].linkUrl
+                break
+              case 'all':
+                this.allBtn.url = resultData.list[i].linkUrl
+                break
+              case 'h5':
+                this.btn1.url = resultData.list[i].linkUrl
+                break
+              case 'chatbot':
+                this.kefu.url = resultData.list[i].linkUrl
+                break
+              default:
+            }
+          }
+        }
       })
     },
     toUrl (url) {
